@@ -82,32 +82,6 @@ class WP_Collapse_O_Matic {
 	/**
 		* PHP5 constructor
 		*/
-	/*function __construct() {
-		// set option values
-		$this->_set_options();
-
-		// load text domain for translations
-		load_plugin_textdomain( 'jquery-collapse-o-matic' );
-
-		//load the script and style if viewing the front-end
-		add_action('wp_enqueue_scripts', array( $this, 'collapsTronicInit' ) );
-		add_action('admin_enqueue_scripts', array( $this, 'codemirror_enqueue_scripts') );
-
-		// add actions
-		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
-		add_action( 'plugin_action_links_' . plugin_basename(__FILE__), array( $this, 'plugin_actions' ) );
-		add_action( 'admin_init', array( $this, 'admin_init' ) );
-		add_shortcode('expand', array($this, 'shortcode'));
-		add_shortcode('colomat', array($this, 'shortcode'));
-
-		//add expandsub shortcodes
-		for ($i=1; $i<30; $i++) {
-			add_shortcode('expandsub'.$i, array($this, 'shortcode'));
-		}
-
-		// Add shortcode support for widgets
-		add_filter('widget_text', 'do_shortcode');
-	} */
 	
 	function __construct() {
 		// Set option values
